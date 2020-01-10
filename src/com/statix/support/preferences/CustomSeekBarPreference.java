@@ -174,6 +174,10 @@ public class CustomSeekBarPreference extends Preference implements SeekBar.OnSee
         mCurrentValue = value;
     }
 
+    public int getProgress() {
+        return mCurrentValue;
+    }
+
     @Override
     public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
         int newValue = progress + mMin;
